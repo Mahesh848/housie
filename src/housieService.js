@@ -9,3 +9,8 @@ export const createGameApi = (game) => {
     const response = axios.post(restURL + "/create", game, headers);
     console.log(response);
 }
+
+export const startGame = (game) => {
+    const response = axios.post(restURL + "/start", game, headers);
+    console.log(response);
+}
